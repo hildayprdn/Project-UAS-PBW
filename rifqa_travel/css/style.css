@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Sen', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sen', sans-serif;
+}
+
+/*Header*/
+header {
+  display: inline;
+}
+nav {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+@media screen and (max-width: 375px) {
+  nav li a {
+    font-size: 0.9rem !important;
+  }
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  transition: 0.2s;
+  color: royalblue;
+}
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: royalblue;
+  text-align: center;
+  color: #fff;
+}
+.jumbotron p {
+  font-size: 1rem;
+}
+.jumlah_bookings{
+  background-color: royalblue;
+  padding: 1px 7px;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 2px 2px 20px royalblue;
+}
+/*End Header*/
+
+/*Main*/
+main {
+  padding: 50px;
+  overflow: auto;
+}
+#content {
+  float: right;
+  width: 80%;
+}
+aside {
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+}
+article h2 {
+  color: royalblue;
+  text-align: center;
+}
+article p, article h3 {
+  text-indent: 1.2rem;
+}
+article img {
+  border-radius: 5px;
+}
+.judul {
+  text-align: center;
+  color: royalblue;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px lightgrey;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  overflow: auto;
+  background-color: white;
+}
+.featured-image {
+  border-radius: 5px;
+  max-width: 200px;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  main {
+    padding: 10px;
+  }
+}
+article a[href] {
+  color: black;
+  text-decoration: none;
+}
+article a[href]:hover {
+  text-decoration: underline;
+}
+.jarak {
+    margin-bottom: 20px;
+}
+label {
+  font-weight: 600;
+}
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=date],
+input[type=file],
+input[type=time],
+input[type=datetime-local],
+textarea,
+select {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+input[type="text"]:focus, 
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px royalblue!important;
+    outline: 0 none !important;
+}
+.btn {
+  cursor: pointer;
+  outline: 0;
+  background-color: royalblue;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  border: none;
+}
+/*End Main*/
+.gelombang {
+  position: relative;
+  top: 10px;
+}
+footer {
+  background-color: royalblue;
+  padding: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+footer a[href] {
+  text-decoration: none;
+  color: white;
+}
+footer td {
+  padding: 10px 20px;
+}
+
+/*Tambahan*/
+.white {
+  color: white;
+}
